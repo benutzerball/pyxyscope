@@ -1,0 +1,27 @@
+sample_rate: 96000
+desired_resolution: {w: 80, h: 80}
+desired_frame_rate: 30
+
+# setting both thresholds to the same vaule yields no dither
+dither_thresholds: 
+    - 0.4 # (0,1)
+    - 0.5 # (0,1)
+
+# The directory where you images are stored
+source_dir: sample_images
+# base_frame types available:
+#   image: source is file name just resize and convert to black and white
+#   face: crop to the first human face found then resize and convert to
+#         black and white
+#   text: print whatever text is specified as source
+base_frames: {
+    1: {source: death_star.png, kind: image},
+    2: {source: pizza, kind: text},
+}
+
+# duration is specified in seconds
+frame_order:
+    - {duration: 10, base_frame: 1} 
+    - {duration: 1, base_frame: 2} 
+
+infinite_loop: No
