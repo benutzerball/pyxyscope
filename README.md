@@ -7,7 +7,7 @@ python3 pyxyscope.py default_config.yaml
 
 Running this should show the following sequence on your scope when tuned right
 
-<video src="deathstarpizzaexample.mp4" width="600" autoplay preload><video>
+<img src="deathstarpizzaexample.gif"><img>
 
 ### Prerequisites
 * numpy
